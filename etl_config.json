@@ -1,0 +1,20 @@
+{
+  "output_path": "artifacts/feature_store",
+  "data_path": "artifacts/data",
+  "transform_path": "artifacts/transforms",
+  "transform_tag": "v1",
+  "filter_config":
+    {
+      "language": "en",
+      "sample_rate": "1.0"
+    },
+  "splits_config": {
+    "train": 0.95,
+    "test": 0.05
+  },
+  "tfidf_config": {
+    "min_df": 80
+  },
+
+  "tag": "yelp2020"
+}
