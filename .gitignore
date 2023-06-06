@@ -1,0 +1,41 @@
+# generate for python
+# Compiled Python files
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.env
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Package distribution / installation
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model files
+*.h5
+*.pth
+
+# Saved models and model artifacts
+**/models/
+
+# wandb
+**/wandb/
+
+# TensorBoard logs
+logs/
+
+# Data files (if not stored elsewhere)
+artifacts/
+
+# Ignore any IDE-specific files or folders
+.idea/
+.vscode/
+
