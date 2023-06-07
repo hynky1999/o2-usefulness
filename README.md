@@ -61,9 +61,8 @@ ML:
 - python 3.10
 
 ### Installation
-- `pip install -r requirements.txt`
-- download data from https://www.yelp.com/dataset/download
-- unzip it to `artifacts/data`
+- Install python requirements `pip install -r requirements.txt`
+- Get the data `bash download_data.sh`
 
 ### Run ETL for transformation
 - `bash run_pipeline.sh`
