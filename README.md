@@ -1,4 +1,4 @@
-# This project server as solution for assigment at O2
+# This project serves as solution for assigment at O2
 
 ## Problem
 We will use very simple problem in which we will try to predict a usefulness of reviews based review properties. We will use the data from yelp dataset.
