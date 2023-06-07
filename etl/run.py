@@ -12,7 +12,9 @@ def get_args():
 
 def init_spark():
     # In non-assigment code, we would init based on dotenv
-    return SparkSession.builder.master("local[*]").appName("etl").config("spark.executor.memory", "32g").config("spark.driver.memory", "32g").config("spark.driver.maxResultSize", "32g").getOrCreate()
+    # Tons of memory because of tfidf
+    return SparkSession.builder.master("local[*]").appName("etl").config("spark.executor.memory", "64g").config("spark.driver.memory", "32g").config("spark.driver.maxResultSize", "32g").getOrCreate()
+
 
 def run_pipe(config: ETLConfig, spark: SparkSession):
     dfs = etl_extract(config, spark)

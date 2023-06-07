@@ -15,6 +15,9 @@ class Result:
 CUR_DIR = Path(__file__).parent
 
 
+def get_model_folder():
+    return CUR_DIR / "models" / wandb.run.id
+
 def create_confusion_matrix(true: np.ndarray, predicted: np.ndarray, labels: List[str], ax):
     conf = confusion_matrix(true, predicted, labels=labels, normalize="pred")
     sns.heatmap(conf, annot=True, ax=ax, cmap="Blues", fmt=".2f")
@@ -35,7 +38,7 @@ def get_cv_metric():
 
 
 def save_model(model):
-    path = CUR_DIR / "models" / wandb.run.id / "model.pkl"
+    path = get_model_folder() / "model.pkl"
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "wb") as f:
         pickle.dump(model, f)
