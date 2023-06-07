@@ -71,4 +71,4 @@ this will generate a report to reports, create transforms and save the data to a
 
 ### Run training
 For training I haven't made any script, because I was running it in jupyter notebooks. Both notebooks for hf and scikit are in `ml` folder.
-Unfortunately I had some trubles with cuda drivers, so I couldn't fully train the bert model.
+Unfortunately I had some trubles with cuda drivers, so I couldn't fully train the ditil-bert model.
