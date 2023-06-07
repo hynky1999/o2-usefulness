@@ -28,7 +28,7 @@ expects a json config like this:
 }
 ```
 
-which specified from where to load, where to save, how to filter and hot to tag the resulting data. The split config defines how and whether to split data into train and test. If we were doing inference we would not use filter_config and split_config.
+which specifies from where to load, where to save, how to filter and hot to tag the resulting data. The split config defines how and whether to split data into train and test. If we were doing inference we would not use filter_config and split_config.
 
 The important property of pipeline is that we can later use same pipeline to transform the data for inference. We just need to use the same transform_tag. The pipeline will than load the transform from transform_path and apply it to the data.
 
@@ -53,7 +53,6 @@ Pipeline:
 
 ML:
 - proper hyperparameter tuning
-- experiment tracking (wandb)
 
 
 
@@ -72,3 +71,4 @@ this will generate a report to reports, create transforms and save the data to a
 
 ### Run training
 For training I haven't made any script, because I was running it in jupyter notebooks. Both notebooks for hf and scikit are in `ml` folder.
+Unfortunately I had some trubles with cuda drivers, so I couldn't fully train the bert model.
